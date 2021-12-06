@@ -4,6 +4,7 @@ buildscript {
     }
     repositories {
         mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -30,5 +31,6 @@ dependencies {
     compile('com.h2database:h2')
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile("org.springframework.security:spring-security-test")
 
 }
