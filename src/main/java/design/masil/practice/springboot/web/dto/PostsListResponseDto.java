@@ -1,6 +1,7 @@
 package design.masil.practice.springboot.web.dto;
 
 import design.masil.practice.springboot.domain.posts.Posts;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
