@@ -28,7 +28,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="5beabc7a-8840-44f1-8199-72e688c57fe6">
-      <console name="YE" type="STANDARD" schema="" session="Main" />
+      <console name="YE" type="STANDARD" schema="" session="Main"><![CDATA[ye_springboot1_webservice]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
