@@ -11,7 +11,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Getter
+@Getter // Do not create setter in Entity class. Instead of setter. Use builder class
 @NoArgsConstructor
 @Entity //class to link to table
 public class Posts extends BaseTimeEntity {
