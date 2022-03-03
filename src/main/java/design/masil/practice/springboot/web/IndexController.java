@@ -29,7 +29,7 @@ public class IndexController {
  */
 
     @GetMapping("/")
-    public String index(Model model, @LoginUser SessionUser user) {
+    public String index(Model model, @LoginUser SessionUser user) { // use @LoginUser to get session info no more httpSession.getAttribute("user")
         model.addAttribute("posts", postsService.findAllDesc());
         if (user != null) {
             model.addAttribute("userName", user.getName());
