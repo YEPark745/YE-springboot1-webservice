@@ -52,7 +52,7 @@ public class PostsApiControllerTest {
 
 
 
-    @Before
+    @Before // Create an MockMvc instance everytime before test starts
     public void setup() {
         mvc = MockMvcBuilders
                 .webAppContextSetup(context)
@@ -66,7 +66,7 @@ public class PostsApiControllerTest {
     }
 
     @Test
-    @WithMockUser(roles="USER")
+    @WithMockUser(roles="USER") // use dummy user. Looks the user(ROLE_USER) does API requests
     public void Posts_Register() throws Exception {
         //given
         String title = "title";
@@ -84,7 +84,7 @@ public class PostsApiControllerTest {
                 postForEntity(url, requestDto, Long.class);
 */
         mvc.perform(post(url)
-                        .contentType(MediaType.APPLICATION_JSON_UTF8)
+                        .contentType(MediaType.APPLICATION_JSON_UTF8) //JSON via ObjectMapper
                         .content(new ObjectMapper().writeValueAsString(requestDto)))
                 .andExpect(status().isOk());
 

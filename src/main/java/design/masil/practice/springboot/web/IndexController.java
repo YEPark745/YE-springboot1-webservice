@@ -28,7 +28,7 @@ public class IndexController {
 
  */
 
-    @GetMapping("/")
+    @GetMapping("/posts/update/{id}")
     public String index(Model model, @LoginUser SessionUser user) { // use @LoginUser to get session info no more httpSession.getAttribute("user")
         model.addAttribute("posts", postsService.findAllDesc());
         if (user != null) {

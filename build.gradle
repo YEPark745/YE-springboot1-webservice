@@ -31,7 +31,7 @@ dependencies {
     compile('com.h2database:h2') //in-memory relationalDB. Local
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
     testCompile('org.springframework.boot:spring-boot-starter-test')
-    testCompile("org.springframework.security:spring-security-test")
+    testCompile("org.springframework.security:spring-security-test") // for testing SpringSecurity
 
     compile("org.mariadb.jdbc:mariadb-java-client")
 
